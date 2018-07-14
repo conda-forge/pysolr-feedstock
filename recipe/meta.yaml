@@ -12,16 +12,16 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
+    - setuptools_scm
   run:
     - python
     - requests >=2.9.1
-    - simplejson
 
 test:
   imports:
