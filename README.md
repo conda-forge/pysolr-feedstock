@@ -14,14 +14,15 @@ Summary: Lightweight python wrapper for Apache Solr.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pysolr-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pysolr-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pysolr-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pysolr-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pysolr-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pysolr-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pysolr-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pysolr-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pysolr/badges/version.svg)](https://anaconda.org/conda-forge/pysolr)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pysolr/badges/downloads.svg)](https://anaconda.org/conda-forge/pysolr)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pysolr-green.svg)](https://anaconda.org/conda-forge/pysolr) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pysolr.svg)](https://anaconda.org/conda-forge/pysolr) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pysolr.svg)](https://anaconda.org/conda-forge/pysolr) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pysolr.svg)](https://anaconda.org/conda-forge/pysolr) |
 
 Installing pysolr
 =================
