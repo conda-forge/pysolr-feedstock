@@ -1,5 +1,5 @@
 {% set name = "pysolr" %}
-{% set version = "3.8.1" %}
+{% set version = "3.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 88ecb176627db6bcf9aeb94a3570bfa0363cb68be4b2a6d89a957d4a87c0a81b
+  sha256: 6ef05feb87c614894243eddc62e9b0a6134a889c159ae868655cf6cd749545e6
 
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -32,7 +32,7 @@ test:
 about:
   home: https://github.com/django-haystack/pysolr/
   license: BSD 3-clause
-  summary: 'Lightweight python wrapper for Apache Solr.'
+  summary: Lightweight python wrapper for Apache Solr.
   license_family: BSD
   license_file: LICENSE
 
