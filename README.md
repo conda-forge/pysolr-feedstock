@@ -3,7 +3,7 @@ About pysolr
 
 Home: https://github.com/django-haystack/pysolr/
 
-Package license: BSD 3-clause
+Package license: BSD-3-clause
 
 Feedstock license: BSD 3-Clause
 
@@ -117,4 +117,5 @@ Feedstock Maintainers
 =====================
 
 * [@cehbrecht](https://github.com/cehbrecht/)
+* [@synapticarbors](https://github.com/synapticarbors/)
 
