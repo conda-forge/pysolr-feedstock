@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.8
     - pip
     - setuptools
     - setuptools_scm
   run:
-    - python
+    - python >=3.8
     - requests >=2.9.1
     - setuptools
 
@@ -35,7 +35,7 @@ test:
 
 about:
   home: https://github.com/django-haystack/pysolr/
-  license: BSD-3-clause
+  license: BSD-3-Clause
   summary: Lightweight python wrapper for Apache Solr.
   license_family: BSD
   license_file: LICENSE
