@@ -1,5 +1,5 @@
 {% set name = "pysolr" %}
-{% set version = "3.9.0" %}
+{% set version = "3.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6ef05feb87c614894243eddc62e9b0a6134a889c159ae868655cf6cd749545e6
+  sha256: 127b4a2dd169234acb1586643a6cd1e3e94b917921e69bf569d7b2a2aa0ef409
 
 build:
   noarch: python
