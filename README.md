@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pysolr-feedstoc
 
 Home: https://github.com/django-haystack/pysolr/
 
-Package license: BSD-3-clause
+Package license: BSD-3-Clause
 
 Summary: Lightweight python wrapper for Apache Solr.
 
