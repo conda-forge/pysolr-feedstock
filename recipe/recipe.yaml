@@ -1,0 +1,47 @@
+schema_version: 1
+
+context:
+  name: pysolr
+  version: 3.11.0
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: bbd0e7467835316880f994b55386c9bc3c146733c17d85a3fed317755976c40a
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . --no-build-isolation --no-deps -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - setuptools
+    - setuptools_scm
+  run:
+    - python >=${{ python_min }}
+    - requests >=2.32.5
+    - setuptools
+
+tests:
+  - python:
+      imports:
+        - pysolr
+      pip_check: true
+      python_version: ${{ python_min }}.*
+
+about:
+  license: BSD-3-Clause
+  summary: Lightweight python wrapper for Apache Solr.
+  license_file: LICENSE
+  homepage: https://github.com/django-haystack/pysolr/
+
+extra:
+  recipe-maintainers:
+    - cehbrecht
+    - synapticarbors
